@@ -1,0 +1,126 @@
+<html>
+<head>
+<title>main.dart</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #a9b7c6;}
+.s1 { color: #6a8759;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.dart</font>
+</center></td></tr></table>
+<pre>
+<span class="s0">import </span><span class="s1">'package:flutter/cupertino.dart'</span><span class="s2">;</span>
+<span class="s0">import </span><span class="s1">'package:flutter/material.dart'</span><span class="s2">;</span>
+
+<span class="s2">void </span><span class="s0">main() {</span>
+  <span class="s0">runApp(MyApp())</span><span class="s2">;</span>
+<span class="s0">}</span>
+
+<span class="s2">class </span><span class="s0">MyApp </span><span class="s2">extends </span><span class="s0">StatelessWidget {</span>
+  <span class="s0">@override</span>
+  <span class="s0">Widget build(BuildContext context) {</span>
+    <span class="s2">return </span><span class="s0">MaterialApp(</span>
+      <span class="s0">theme: ThemeData.dark()</span><span class="s2">,</span>
+      <span class="s0">home: Scaffold(</span>
+        <span class="s0">appBar: AppBar(</span>
+          <span class="s0">centerTitle: </span><span class="s2">true,</span>
+          <span class="s0">title: Text(</span><span class="s1">&quot;Info Page&quot;</span><span class="s2">,</span>
+          <span class="s0">)</span><span class="s2">,</span>
+        <span class="s0">)</span><span class="s2">,</span>
+        <span class="s0">body: Container(</span>
+          <span class="s0">padding: </span><span class="s2">const </span><span class="s0">EdgeInsets.symmetric(horizontal: </span><span class="s3">60.0</span><span class="s2">,</span><span class="s0">vertical: </span><span class="s3">20.0</span><span class="s0">)</span><span class="s2">,</span>
+          <span class="s0">child: Column(</span>
+            <span class="s0">mainAxisAlignment: MainAxisAlignment.center</span><span class="s2">,</span>
+            <span class="s0">crossAxisAlignment: CrossAxisAlignment.center</span><span class="s2">,</span>
+            <span class="s0">children: [</span>
+            <span class="s0">Row(</span>
+            <span class="s0">mainAxisAlignment: MainAxisAlignment.center</span><span class="s2">,</span>
+            <span class="s0">crossAxisAlignment: CrossAxisAlignment.end</span><span class="s2">,</span>
+            <span class="s0">children: [</span>
+              <span class="s0">CircleAvatar(</span>
+                <span class="s0">backgroundImage: AssetImage(</span>
+                    <span class="s1">&quot;images/Avatar.png&quot;</span><span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">radius: </span><span class="s3">90</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+            <span class="s0">]</span><span class="s2">,</span>
+          <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Divider(</span>
+                <span class="s0">color: Colors.white10</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Container(</span>
+            <span class="s0">child: Row(</span>
+              <span class="s0">mainAxisAlignment: MainAxisAlignment.start</span><span class="s2">,</span>
+              <span class="s0">crossAxisAlignment: CrossAxisAlignment.end</span><span class="s2">,</span>
+              <span class="s0">children: [</span>
+                <span class="s0">Text(</span>
+                  <span class="s1">'NAME'</span><span class="s2">,</span>
+                  <span class="s0">textScaleFactor: </span><span class="s3">1.0</span><span class="s2">,</span>
+              <span class="s0">style:TextStyle(</span>
+                <span class="s0">color: Colors.white24</span><span class="s2">,</span><span class="s0">)</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">]</span><span class="s2">,</span>
+      <span class="s0">)</span><span class="s2">,</span>
+          <span class="s0">)</span><span class="s2">,</span>
+
+              <span class="s0">Container(</span>
+                <span class="s0">child: Row(</span>
+                  <span class="s0">mainAxisAlignment: MainAxisAlignment.start</span><span class="s2">,</span>
+                  <span class="s0">crossAxisAlignment: CrossAxisAlignment.end</span><span class="s2">,</span>
+                  <span class="s0">children: [</span>
+                    <span class="s0">Text(</span>
+                      <span class="s1">'Eylül Yıldız'</span><span class="s2">,</span>
+                      <span class="s0">textScaleFactor: </span><span class="s3">2.5</span><span class="s2">,</span>
+                      <span class="s0">style:TextStyle(</span>
+                          <span class="s0">color: Colors.indigo</span><span class="s2">, </span><span class="s0">fontFamily:</span><span class="s1">'RobotoMono' </span><span class="s0">)</span><span class="s2">,</span>
+
+                <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">]</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+
+              <span class="s0">Container(</span>
+                <span class="s0">child:ListTile(</span>
+                  <span class="s0">title: Text(</span><span class="s1">'eylul.yildiz@boun.edu.tr'</span><span class="s2">,</span>
+                      <span class="s0">style: TextStyle(fontWeight: FontWeight.w500))</span><span class="s2">,</span>
+                  <span class="s0">leading: Icon(</span>
+                    <span class="s0">Icons.mail</span><span class="s2">,</span>
+                    <span class="s0">color: Colors.indigo</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">contentPadding: EdgeInsets.symmetric(horizontal: </span><span class="s3">5.0</span><span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">Container(</span>
+                <span class="s0">child:ListTile(</span>
+                  <span class="s0">title: Text(</span><span class="s1">'0(538) 983 56 75'</span><span class="s2">,</span>
+                      <span class="s0">style: TextStyle(fontWeight: FontWeight.w500))</span><span class="s2">,</span>
+
+                  <span class="s0">leading: Icon(</span>
+                    <span class="s0">Icons.phone</span><span class="s2">,</span>
+                    <span class="s0">color: Colors.indigo</span><span class="s2">,</span>
+                  <span class="s0">)</span><span class="s2">,</span>
+                  <span class="s0">contentPadding: EdgeInsets.symmetric(horizontal: </span><span class="s3">5.0</span><span class="s0">)</span><span class="s2">,</span>
+                <span class="s0">)</span><span class="s2">,</span>
+              <span class="s0">)</span><span class="s2">,</span>
+
+
+
+
+
+
+
+  <span class="s0">]</span><span class="s2">,</span>
+    <span class="s0">)</span><span class="s2">,</span>
+    <span class="s0">)</span><span class="s2">,</span>
+    <span class="s0">)</span><span class="s2">,</span>
+    <span class="s0">)</span><span class="s2">;</span>
+  <span class="s0">}</span>
+<span class="s0">}</span></pre>
+</body>
+</html>
